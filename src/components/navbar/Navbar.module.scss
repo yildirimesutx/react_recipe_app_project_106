@@ -13,17 +13,30 @@
     a{
         text-decoration: none;
         font-family: 'Girassol', cursive;
-        font-size: 2rem;
-        color: #393E46;
+        font-size: 2.5rem;
+        color: #201e47;
         font-variant: small-caps;
-    }
-    
 
+        &:hover{
+            font-weight: bold;
+            color: #2BBAC7;
+        }
+    }
 }
+span{
+    color: #2BBAC7;
+}
+.span{
+    color: #201e47;
+    font-style: italic;
+}
+
+
 
 .home{
     display: flex;
-    justify-content:space-evenly ;
+    justify-content: space-between ;
+    
 }
 
 
@@ -31,6 +44,7 @@
 
 .about_login{
     display: flex;
-    justify-content:space-between ;
+    justify-content:space-between;
+    width: 400px;
 }
 

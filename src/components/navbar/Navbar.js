@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className={styling.navbar}>
        <div className={styling.home}>
-       <Link to="/">Clarusway recipe</Link> 
+       <Link to="/"> <span className={styling.span}>Clarusway</span>  <span>recipe</span> </Link> 
        </div>
        <div className={styling.about_login}>
        <Link to="/about">About</Link> 
