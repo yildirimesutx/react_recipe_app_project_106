@@ -1,0 +1,39 @@
+body{
+ background-color: #03ADB5;
+}
+
+.about_logo{
+    margin-top: 3rem;
+    width: 35rem;
+    height: 23rem;
+}
+
+.name{
+    color: white;
+    font-variant: small-caps;
+    font-family: 'Girassol', cursive;
+    font-size: 3rem;
+    
+}
+
+.text{
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+.big_box{
+    display: inline-block;
+    justify-content: center; 
+
+}
+
+.text_box{
+ display: block;
+ flex-wrap: wrap;
+ align-content: center;
+ border: 1px solid white;
+ width: 35rem;
+ height: 20rem;
+ margin-top: 3rem;
+
+}
