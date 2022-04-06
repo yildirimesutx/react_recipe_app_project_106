@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+   padding: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height:5rem ;
+    background-color: #E1F1DD;
+    padding: 1rem;
+    a{
+        text-decoration: none;
+        font-family: 'Girassol', cursive;
+        font-size: 2rem;
+        color: #393E46;
+        font-variant: small-caps;
+    }
+    
+
+}
+
+.home{
+    display: flex;
+    justify-content:space-evenly ;
+}
+
+
+
+
+.about_login{
+    display: flex;
+    justify-content:space-between ;
+}
+
