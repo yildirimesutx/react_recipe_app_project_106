@@ -6,14 +6,15 @@ const Navbar = () => {
   return (
     <div className={styling.navbar}>
        <div className={styling.home}>
-       <Link to="/"> <span className={styling.span}>{`<Clarusway>`}</span>  <span>recipe</span> </Link> 
+       <Link to="/"> <span className={styling.span}>{`<Chef Mesut's>`}</span>  <span>recipes</span> </Link> 
        </div>
 
 
-
        <div className={styling.about_login}>
-       <Link to="/about">About</Link> 
+       <Link to="/about">About</Link>
+
        <a href="https://github.com/yildirimesutx" target="_blank">Github</a>
+       
        <Link to="/login">Logout</Link>
        </div> 
     </div>

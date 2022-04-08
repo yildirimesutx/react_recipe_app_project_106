@@ -2,56 +2,42 @@ import React from 'react'
 import styling from "./Home.module.scss"
 import axios from "axios"
 import  {useState,useEffect} from "react"
+import Header from '../../components/header/Header'
 
 const Home = () => {
 
 
-const [recipe, setRecipe] = useState([]);
+const [query, setQuery] = useState("");
+const [food, setFood] = useState("");
+const mealTypes =["Breakfast", "Lunch", "Dinner", "Snack", "Teatime"]
+const [meal, setMeal] =useState(mealTypes[0].toLowerCase())
 
 
 
 const APP_ID = 'fa255c54';
-const APP_KEY = '864a82802664a50366c68f2ca424dad1';
-
-let query = "pizza"
-
-let meal = "meal"
+const APP_KEY = '58d9e40af297f0ee2f74a36b5d1a9e4b';
 
 const url =`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${meal}`
 
 const getApi = async()=>{
-   const res = await axios.get(url).then((res)=>{
-    console.log("bir",res.data)
-    })
-  
+   if(query){
+    const result = await axios.get(url)
+    setFood(result.data.hits)
+   }else{
+     alert("please fill the form")
+   }
+   
 }
-
-// const getApi = async () =>{ 
-//   const response = await axios(url)
-//   console.log(response.data)
-//    }
-
-  //  fetch(url)
-  //   .then((res) => res.json())
-  //   .then((json) => setProducts(json.data.data.hits));
-
-
-useEffect(() => {
- getApi() 
-}, []);
-
-
-
-
 
 
 
   return (
     <div>
-      <h1>Food App</h1>
-
-
-
+    <Header  setQuery={setQuery}
+             getApi={getApi}
+             mealTypes={mealTypes}
+             setMeal={setMeal}
+    />
     </div>
   )
 }
