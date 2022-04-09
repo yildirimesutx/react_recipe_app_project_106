@@ -1,8 +1,21 @@
 import React from 'react'
+import styling from "./Home.module.scss"
 
-const RecipeCard = () => {
+
+
+
+
+
+const RecipeCard = ({recipe, key}) => {
+
+  
   return (
-    <div>RecipeCard</div>
+    <div key={key}>
+        
+     <h3>{recipe.label}</h3>
+     <img src={recipe.image} alt="" />
+    
+    </div>
   )
 }
 
