@@ -6,7 +6,8 @@ const Navbar = () => {
   return (
     <div className={styling.navbar}>
        <div className={styling.home}>
-       <Link to="/"> <span className={styling.span}>{`<Chef Mesut's>`}</span>  <span>recipes</span> </Link> 
+
+       <Link to="/home"> <span className={styling.span}>{`<Chef Mesut's>`}</span>  <span>recipes</span> </Link> 
        </div>
 
 
@@ -15,7 +16,7 @@ const Navbar = () => {
 
        <a href="https://github.com/yildirimesutx" target="_blank">Github</a>
        
-       <Link to="/login">Logout</Link>
+       <Link  onMouseUp={() => sessionStorage.clear()} to="/">Logout</Link>
        </div> 
     </div>
   )

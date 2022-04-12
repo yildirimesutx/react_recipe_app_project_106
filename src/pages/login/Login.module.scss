@@ -29,18 +29,40 @@
         font-family: 'Girassol', cursive;
         font-weight: 600;
         opacity: 1;
+      }  
     }
-    
-    
-    }
-
-
-
-
-
-
-
 }
 
+.login{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.name{
+    width: 15rem;
+    margin: 0.8rem;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Girassol', cursive;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+.buton{
+    width: 15rem;
+    margin: 1rem;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    font-family: 'Girassol', cursive;
+    font-variant: small-caps;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+}
 
 
