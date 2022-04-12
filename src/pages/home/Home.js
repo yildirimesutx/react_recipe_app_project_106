@@ -1,20 +1,17 @@
 import React from 'react'
 import styling from "./Home.module.scss"
 import axios from "axios"
-import  {useState,useEffect} from "react"
+import  {useState} from "react"
 import Header from '../../components/header/Header'
 import RecipeCard from './RecipeCard'
 import homeImg from '../../assets/home.svg'
 
-
 const Home = () => {
-
 
 const [query, setQuery] = useState("");
 const [food, setFood] = useState();
 const mealTypes =["Breakfast", "Lunch", "Dinner", "Snack", "Teatime"]
 const [meal, setMeal] =useState(mealTypes[0].toLowerCase())
-
 
 
 const APP_ID = 'fa80e48b';
@@ -26,7 +23,7 @@ const getApi = async()=>{
    if(query){
     const result = await axios.get(url)
     setFood(result.data.hits)
-   console.log(result.data.hits)
+  //  console.log(result.data.hits)
    }else{
      alert("please fill the form")
    }
@@ -44,7 +41,7 @@ const getApi = async()=>{
     <div>
 {
    food ? (
-    <div> 
+    <div className={styling.recipe_box}> 
 {food.map((recipe,index)=>(
 <RecipeCard recipe={recipe.recipe} key={index} />
 ))}
