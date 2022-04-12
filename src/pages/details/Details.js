@@ -16,22 +16,24 @@ const Details = () => {
     console.log(recipe1);
   return (
     <div className={styling.genel}>
+
         <div className={styling.title}>
-      <h1> {recipe1.label}</h1>
-      <img src={dietSvg} alt="" />
-      </div>
-      <div className={styling.card_box}>
-      <div>
-          <img src={recipe1.image} alt="" />
-      </div>
-     <div className={styling.text}>
-       {recipe1.ingredientLines.map((e, index)=>(
-           <li key={index}>
+             <h1> {recipe1.label}</h1>
+             <img src={dietSvg} alt="" />
+        </div>
+
+        <div className={styling.card_box}>
+         
+            <img src={recipe1.image} alt="" />
+            
+            <div className={styling.text}>
+                {recipe1.ingredientLines.map((e, index)=>(
+              <li key={index}>
                 {e}
-           </li>
-       ))}
-     </div>
-     </div>
+               </li>))}      
+           </div>
+
+        </div>
     </div>
   )
 }
