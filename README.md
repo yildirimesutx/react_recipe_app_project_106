@@ -3,17 +3,7 @@
 
 # Project-007 : Recipe App (RC-07)
 
-## Description
 
-Project aims to create a Recipe App.
-
-## Problem Statement
-
-- We are adding a new project to our portfolios. So you and your colleagues have started to work on the project.
-
-## Project Skeleton
-
-```
 007 - Recipe App (folder)
 |
 |----readme.md         # Given to the students (Definition of the project)
@@ -53,11 +43,12 @@ SOLUTION
 │    └── index.css
 ├── package.json
 └── yarn.lock
+<<<<<<< HEAD
 ```
 
 ## Expected Outcome
 
-![Project 007 Snapshot](food-search-app.gif)
+![Project 007 Snapshot](Animation.gif)
 
 ## Objective
 
@@ -98,3 +89,5 @@ Build a Recipe App using ReactJS.
 - You can add additional functionalities to your app.
 
 **<p align="center">&#9786; Happy Coding &#9997;</p>**
+=======
+
