@@ -26,7 +26,7 @@ const handleSubmit= (e)=>{
     <div className={styling.container}>
     <div className={styling.main}>
    <img src={meal} alt="meal" />
-   <h1>{`<Clarusway>`} Recipe</h1>
+   <h1>{`< Chef Mesut>`} Recipe</h1>
    <form  onSubmit={handleSubmit} className={styling.login} action="">
       <input className={styling.name} type="text" placeholder="USERNAME" required  />
       <input  className={styling.name}type="password" placeholder="PASSWORD" required />
