@@ -1,5 +1,3 @@
-<p>Clarusway<img align="right"
-  src="https://secure.meetupstatic.com/photos/event/3/1/b/9/600_488352729.jpeg"  width="15px"></p>
 
 # Project-007 : Recipe App (RC-07)
 
@@ -43,8 +41,7 @@ SOLUTION
 │    └── index.css
 ├── package.json
 └── yarn.lock
-<<<<<<< HEAD
-```
+
 
 ## Expected Outcome
 
@@ -89,5 +86,5 @@ Build a Recipe App using ReactJS.
 - You can add additional functionalities to your app.
 
 **<p align="center">&#9786; Happy Coding &#9997;</p>**
-=======
+
 
